@@ -2,17 +2,15 @@ package com.example.javademo.resources;
 
 public class CompareNumbers {
     public static void compareNumbers(int numToGuess, int numPicked) {
-        String guessResult = "";
         if(numToGuess == numPicked) {
-            guessResult = "You win!";
+            System.out.println("You win!");
         } else if(numToGuess < numPicked) {
-            guessResult = "Not quite, guess something a little lower...";
-            PlayAgain.playAgain();
+            System.out.println("Not quite, guess something a little lower...");
+            PlayAgain.playAgain(numToGuess);
         } else {
-            guessResult = "The number is a bit higher";
-            PlayAgain.playAgain();
+            System.out.println("The number is a bit higher");
+            PlayAgain.playAgain(numToGuess);
         }
-        System.out.println(guessResult);
 
     }
 }

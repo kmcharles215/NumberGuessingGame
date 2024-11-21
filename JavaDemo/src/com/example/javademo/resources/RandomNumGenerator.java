@@ -6,7 +6,6 @@ public class RandomNumGenerator {
 
     public static int randomNumber() {
         Random randomNum = new Random();
-        int rand = randomNum.nextInt(0,100);
-        return rand;
+        return randomNum.nextInt(0,100);
     }
 }
